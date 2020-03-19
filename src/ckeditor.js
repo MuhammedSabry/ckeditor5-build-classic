@@ -133,6 +133,25 @@ ClassicEditor.defaultConfig = {
 			'mergeTableCells'
 		]
 	},
+	link: {
+		decorators: {
+			isExternal: {
+				mode: 'automatic',
+				callback: () => true,
+				attributes: {
+					target: '_blank',
+					rel: 'noopener noreferrer'
+				}
+			},
+			isDownloadable: {
+				mode: 'manual',
+				label: 'Downloadable',
+				attributes: {
+					download: 'file.png'
+				}
+			}
+		}
+	},
 	// This value must be kept in sync with the language defined in webpack.config.js.
 	language: 'en'
 };
