@@ -33,6 +33,7 @@ import Underline from '@ckeditor/ckeditor5-basic-styles/src/underline.js';
 import Base64UploadAdapter from '@ckeditor/ckeditor5-upload/src/adapters/base64uploadadapter.js';
 import Essentials from '@ckeditor/ckeditor5-essentials/src/essentials.js';
 import Paragraph from '@ckeditor/ckeditor5-paragraph/src/paragraph.js';
+import Alignment from '@ckeditor/ckeditor5-alignment/src/alignment';
 
 export default class Editor extends ClassicEditor {
 }
@@ -68,7 +69,8 @@ Editor.builtinPlugins = [
 	Underline,
 	Base64UploadAdapter,
 	Essentials,
-	Paragraph
+	Paragraph,
+	Alignment
 ];
 
 // Editor configuration.
@@ -103,6 +105,9 @@ ClassicEditor.defaultConfig = {
 			'insertTable',
 			'mediaEmbed'
 		]
+	},
+	alignment: {
+		options: [ 'left', 'center', 'right', 'justify' ]
 	},
 	image: {
 		toolbar: [
