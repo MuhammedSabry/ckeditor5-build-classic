@@ -1,6 +1,6 @@
 {
   "name": "@ckeditor/ckeditor5-build-classic",
-  "version": "18.3.0",
+  "version": "18.4.0",
   "description": "The classic editor build of CKEditor 5 – the best browser-based rich text editor.",
   "keywords": [
     "ckeditor5-build",
@@ -25,27 +25,29 @@
     "build"
   ],
   "devDependencies": {
-    "@ckeditor/ckeditor5-autoformat": "^19.0.1",
-    "@ckeditor/ckeditor5-basic-styles": "^19.0.1",
-    "@ckeditor/ckeditor5-block-quote": "^19.0.1",
-    "@ckeditor/ckeditor5-dev-utils": "^20.0.0",
-    "@ckeditor/ckeditor5-dev-webpack-plugin": "^20.0.0",
-    "@ckeditor/ckeditor5-editor-classic": "^19.0.1",
-    "@ckeditor/ckeditor5-essentials": "^19.0.1",
-    "@ckeditor/ckeditor5-font": "^19.0.1",
-    "@ckeditor/ckeditor5-heading": "^19.0.1",
-    "@ckeditor/ckeditor5-highlight": "^19.0.1",
-    "@ckeditor/ckeditor5-horizontal-line": "^19.0.1",
-    "@ckeditor/ckeditor5-image": "^19.0.1",
-    "@ckeditor/ckeditor5-indent": "^19.0.1",
-    "@ckeditor/ckeditor5-link": "^19.0.1",
-    "@ckeditor/ckeditor5-list": "^19.0.1",
-    "@ckeditor/ckeditor5-media-embed": "^19.0.1",
-    "@ckeditor/ckeditor5-paragraph": "^19.0.1",
-    "@ckeditor/ckeditor5-paste-from-office": "^19.0.1",
-    "@ckeditor/ckeditor5-table": "^19.0.1",
-    "@ckeditor/ckeditor5-theme-lark": "^19.0.1",
-    "@ckeditor/ckeditor5-upload": "^19.0.1",
+    "@ckeditor/ckeditor5-autoformat": "^21.0.0",
+    "@ckeditor/ckeditor5-basic-styles": "^21.0.0",
+    "@ckeditor/ckeditor5-block-quote": "^21.0.0",
+    "@ckeditor/ckeditor5-core": "^21.0.0",
+    "@ckeditor/ckeditor5-dev-utils": "^23.1.1",
+    "@ckeditor/ckeditor5-dev-webpack-plugin": "^23.1.1",
+    "@ckeditor/ckeditor5-editor-classic": "^21.0.0",
+    "@ckeditor/ckeditor5-essentials": "^21.0.0",
+    "@ckeditor/ckeditor5-font": "^21.0.0",
+    "@ckeditor/ckeditor5-heading": "^21.0.0",
+    "@ckeditor/ckeditor5-highlight": "^21.0.0",
+    "@ckeditor/ckeditor5-horizontal-line": "^21.0.0",
+    "@ckeditor/ckeditor5-image": "^21.0.0",
+    "@ckeditor/ckeditor5-indent": "^21.0.0",
+    "@ckeditor/ckeditor5-link": "^21.0.0",
+    "@ckeditor/ckeditor5-list": "^21.0.0",
+    "@ckeditor/ckeditor5-media-embed": "^21.0.0",
+    "@ckeditor/ckeditor5-paragraph": "^21.0.0",
+    "@ckeditor/ckeditor5-paste-from-office": "^21.0.0",
+    "@ckeditor/ckeditor5-table": "^21.0.0",
+    "@ckeditor/ckeditor5-theme-lark": "^21.0.0",
+    "@ckeditor/ckeditor5-ui": "^21.0.0",
+    "@ckeditor/ckeditor5-upload": "^21.0.0",
     "eslint": "^7.2.0",
     "eslint-config-ckeditor5": "^2.1.0",
     "husky": "^4.2.5",
@@ -72,6 +74,7 @@
     "url": "https://github.com/MuhammedSabry/ckeditor5-build-classic.git"
   },
   "scripts": {
+    "dev-build": "webpack --mode production -w",
     "build": "webpack --mode production",
     "lint": "eslint --quiet '**/*.js'",
     "stylelint": "stylelint --quiet --allow-empty-input 'theme/**/*.css' 'docs/**/*.css'",
@@ -95,7 +98,9 @@
     }
   },
   "dependencies": {
-    "@ckeditor/ckeditor5-alignment": "^19.0.1",
-    "@ckeditor/ckeditor5-upload": "latest"
+    "@ckeditor/ckeditor5-alignment": "^21.0.0",
+    "@ckeditor/ckeditor5-engine": "^21.0.0",
+    "@ckeditor/ckeditor5-upload": "^21.0.0",
+    "@ckeditor/ckeditor5-widget": "^21.0.0"
   }
 }
